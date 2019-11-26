@@ -1,4 +1,4 @@
-package day0
+package day00
 
 import scala.language.implicitConversions
 
@@ -35,7 +35,7 @@ object Pd_Metho_injection {
       }
     }
 
-    import Monoid._
+//    import Monoid._
     import MonoidOp._
     val r = 3 |+| 4
     println(s"r is $r")

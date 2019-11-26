@@ -1,4 +1,4 @@
-package day0
+package day00
 
 object Pb_sum_function {
 

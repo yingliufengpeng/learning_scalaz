@@ -1,4 +1,4 @@
-package day0
+package day00
 
 object Pc_FoldLeft {
 
