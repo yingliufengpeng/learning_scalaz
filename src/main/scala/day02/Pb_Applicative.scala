@@ -112,7 +112,7 @@ object Pb_Applicative {
 
     // Int => List[Int] = a => f(a) :: m(a)  应该是这样的计算结构 m: Int => List[Int]
     val f2 = ^(f, (_: Int) => List.empty[Int])((r, listr) => {
-      //
+      // r 为函数计算的结果, listr则为后续递归的结果!!!
       r :: listr
     })
 
