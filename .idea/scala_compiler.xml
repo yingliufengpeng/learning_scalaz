@@ -3,6 +3,7 @@
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="learning_scalaz">
       <option name="higherKinds" value="true" />
+      <option name="featureWarnings" value="true" />
       <parameters>
         <parameter value="-language:_" />
         <parameter value="-Ypartial-unification" />
