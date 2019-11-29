@@ -16,8 +16,7 @@ object Pc_Isomorphisms {
      * are said to be isomorphic if there is at least one isomorphism(同构)
      * f: A => B.
      */
-    import scalaz._
-    import scalaz.Scalaz._
+
 
     sealed trait Family {}
     case object Mother extends Family {}
@@ -29,7 +28,7 @@ object Pc_Isomorphisms {
     case object Stone extends Relic {}
     case object Flower extends Relic {}
 
-    import Isomorphism.<=>
+    import scalaz.Isomorphism.<=>
     val isoFamilyRelic: Family <=> Relic = new (Family <=> Relic) {
       val to: Family => Relic = {
         case Mother => Feather
