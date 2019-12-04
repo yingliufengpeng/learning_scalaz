@@ -1,6 +1,7 @@
 package day19
 
 import org.scalacheck.{Arbitrary, Gen, Prop}
+import scalaz.Equal
 
 object Pc_Isomorphisms {
 
@@ -17,7 +18,8 @@ object Pc_Isomorphisms {
      * f: A => B.
      */
 
-
+    import scalaz._
+    import scalaz.Scalaz._
     sealed trait Family {}
     case object Mother extends Family {}
     case object Father extends Family {}
