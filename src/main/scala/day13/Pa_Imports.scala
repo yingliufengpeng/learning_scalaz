@@ -60,6 +60,12 @@ object Pa_Imports {
 
     val r7 = (1 > 10)? "foo" | "bar" // 三元表达式
     println(s"r7 is $r7")
+
+    type M[A] = Int
+
+    val x: M[_] = 3
+    println(s"x is $x")
+
   }
 
 }
